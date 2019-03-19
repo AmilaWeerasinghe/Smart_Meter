@@ -36,11 +36,21 @@
         android:layout_height="wrap_content"
         android:id="@+id/etUsername"
         />
-
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Password"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
+        />
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Log Out"
-        android:id="@+id/bLogout"
+        android:text="Register"
+        android:id="@+id/bRegister"
         />
 </LinearLayout>
