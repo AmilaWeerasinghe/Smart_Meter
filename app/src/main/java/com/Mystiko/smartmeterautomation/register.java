@@ -28,6 +28,14 @@ public class register extends AppCompatActivity implements View.OnClickListener 
         switch (v.getId()){
             case R.id.bRegister:
 
+                String name=etName.getText().toString();
+                String username=etUsername.getText().toString();
+                String password=etPassword.getText().toString();
+                int age=Integer.parseInt(etAge.getText().toString());
+
+                //we have to create a new User when Register is clicked
+                User registeredData=new User(name,username,password,age);
+
                 break;
         }
     }
