@@ -1,5 +1,6 @@
 package com.Mystiko.smartmeterautomation;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,9 +35,21 @@ public class register extends AppCompatActivity implements View.OnClickListener 
                 int age=Integer.parseInt(etAge.getText().toString());
 
                 //we have to create a new User when Register is clicked
-                User registeredData=new User(name,username,password,age);
+                User user=new User(name,username,password,age);
+
+                registerUser(user);
 
                 break;
         }
+    }
+    private void registerUser(User user){
+        ServerRequests serverRequests=new ServerRequests(this);
+        serverRequests.StoreUserDataInBackground(user, new GetUserCallBack() {
+            @Override
+            public void done(User returnedUser) {
+                startActivity(new Intent(register.this,login.class));
+            }
+        });
+
     }
 }

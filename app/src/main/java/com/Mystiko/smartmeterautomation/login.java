@@ -1,6 +1,7 @@
 package com.Mystiko.smartmeterautomation;
 
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,19 +31,54 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     @Override//switch case used to select between many buttons
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.bLogin:
-
-                User user=new User(null,null);
-                userLocalStore.storeUserData(user);
-                userLocalStore.setUserLoggedIn(true);
-                break;
-
-
-            case R.id.tvRegisterLink:
+            case R.id.btvRegisterLink:
                 startActivity(new Intent(this,register.class));//go to register page
                 break;
+            case R.id.bLogin:
+                String username=etUsername.getText().toString();
+                String password=etPassword.getText().toString();
+
+                User user=new User(null,null);
+
+                authenticate(user);
+
+                break;
+
+
+
 
         }
+
+    }
+
+    private void authenticate(User user){
+        ServerRequests serverRequests=new ServerRequests(this);
+        serverRequests.fetchUserDataInBackground(user, new GetUserCallBack() {
+            @Override
+            public void done(User returnedUser) {
+                if(returnedUser==null){
+                    showErrorMsg();
+                }
+                else{
+                    logUserIn(returnedUser);
+                }
+
+            }
+        });
+
+
+    }
+    private  void showErrorMsg(){
+        AlertDialog.Builder dialogBulider=new AlertDialog.Builder(login.this);
+        dialogBulider.setMessage("Incorrect User details");
+        dialogBulider.setPositiveButton("OK",null);
+        dialogBulider.show();
+    }
+    private void logUserIn(User returneduser){
+        userLocalStore.storeUserData(returneduser);
+        userLocalStore.setUserLoggedIn(true);
+
+        startActivity(new Intent(this,MainActivity.class));
 
     }
 }

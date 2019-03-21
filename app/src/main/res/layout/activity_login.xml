@@ -33,13 +33,13 @@
         android:text="Login"
         android:id="@+id/bLogin"
         />
-    <TextView
+    <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="Register Here"
         android:layout_gravity="center"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:id="@+id/tvRegisterLink"
+        android:id="@+id/btvRegisterLink"
         />
 </LinearLayout>
