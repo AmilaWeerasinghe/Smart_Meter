@@ -7,56 +7,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button bLogout;
-    EditText etUsername,etName,etAge;
-    UserLocalStore userLocalStore;
+public class MainActivity extends AppCompatActivity  {
+    Button LogInB;
+    EditText UsernameEt,PasswordEt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        etUsername=(EditText)findViewById(R.id.etUsername);
-        etName=(EditText)findViewById(R.id.etName);
-        etAge=(EditText)findViewById(R.id.etAge);
-        bLogout=(Button)findViewById(R.id.bLogout);
-        bLogout.setOnClickListener(this);
-        userLocalStore=new UserLocalStore(this);
+       LogInB=(Button)findViewById(R.id.BLogIn);
+       UsernameEt=(EditText)findViewById(R.id.EtUserame);
+       PasswordEt=(EditText)findViewById(R.id.EtPassword);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if(authenticate()==true){
-            displaydetails();
-        }
-        else{
-            startActivity(new Intent(MainActivity.this,login.class));//go to login class
-        }
-    }
-    public void displaydetails(){
-        User user=userLocalStore.getLogedInUser();
-
-        etUsername.setText(user.username);
-        etAge.setText(user.age);
-        etName.setText(user.name);
-
-    }
-    private boolean authenticate(){
-        return userLocalStore.getUserLoggedIn();
+    public void OnLogin(View view){
+        String username=UsernameEt.getText().toString();
+        String password=PasswordEt.getText().toString();
+        String type="login ";
+        BackgroundWorker backgroundWorker=new BackgroundWorker(this);
+        backgroundWorker.execute(type,username,password);
 
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.bLogout:
-                userLocalStore.ClearUserData();
-                userLocalStore.setUserLoggedIn(false);
 
-                startActivity(new Intent(this,login.class));//go to login page
-
-                break;
-
-        }
-    }
 }

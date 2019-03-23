@@ -9,38 +9,30 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Name"
+        android:text="User Name"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etName"
+        android:id="@+id/EtUserame"
         />
+
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Age"
+        android:text="Password"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etAge"
-        />
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="UserName"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etUsername"
+        android:id="@+id/EtPassword"
         />
 
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Log Out"
-        android:id="@+id/bLogout"
+        android:text="Log In"
+        android:id="@+id/BLogIn"
+        android:onClick="OnLogin"
         />
 </LinearLayout>
