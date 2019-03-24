@@ -2,6 +2,7 @@ package com.Mystiko.smartmeterautomation;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 
 import java.io.BufferedReader;
@@ -117,6 +118,11 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         alertDialog.setMessage(result);
         alertDialog.show();
+
+        if(result.equals("login success !!!!! Welcome user")){
+            context.startActivity(new Intent(context,Homie.class));
+        }
+
     }
 
     @Override
