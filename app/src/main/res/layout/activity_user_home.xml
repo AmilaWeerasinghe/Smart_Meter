@@ -71,7 +71,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/cerclebackgroundpink"
+                    android:background="@drawable/profileicon"
                     android:src="@drawable/ic_lightbulb_outline_black_24dp"
                     android:padding="10dp"/>
                 <TextView
@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Ideas"/>
+                    android:text="Your Profile"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"

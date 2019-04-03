@@ -12,7 +12,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import com.mystiko.smartmeter.R;
-import com.mystiko.smartmeter.KenBurnsView;
 
 public class SplashActivity extends Activity {
 
