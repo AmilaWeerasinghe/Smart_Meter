@@ -9,7 +9,8 @@ import android.widget.TextView;
 import com.mystiko.smartmeter.R;
 
 
-public class RobotoTextView extends TextView {
+
+public class RobotoTextView extends android.support.v7.widget.AppCompatTextView {
 
     public RobotoTextView(Context context) {
         super(context);
