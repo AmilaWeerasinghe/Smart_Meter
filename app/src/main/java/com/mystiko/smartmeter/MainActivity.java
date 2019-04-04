@@ -119,8 +119,10 @@ public class MainActivity extends AppCompatActivity
                             z = "Login successful";
                             isSuccess=true;
                             finish();
+
                             Intent i = new Intent(MainActivity.this, UserHome.class);
                             i.putExtra("mserial", passwordd);
+
                             startActivity(i);
 
                         }
