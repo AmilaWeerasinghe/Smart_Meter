@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity
 
                             Intent i = new Intent(MainActivity.this, UserHome.class);
                             i.putExtra("mserial", passwordd);
-
+                            con.close();
                             startActivity(i);
 
                         }
