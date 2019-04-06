@@ -15,7 +15,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.sql.Connection;
@@ -25,6 +27,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ProfilePage extends AppCompatActivity {
+
+    private TextView Address1,Address2;
+    EditText Address;
 
     String MSerialStr;
     String Csv;
@@ -55,6 +60,9 @@ public class ProfilePage extends AppCompatActivity {
         layout1 = new ConstraintSet();
         layout2 = new ConstraintSet();
         imageViewPhoto = findViewById(R.id.photo);
+        //Address1=(TextView)findViewById(R.id.Address1);
+        //Address2=(TextView)findViewById(R.id.Address2);
+        Address=(EditText) findViewById(R.id.txt_bio);
         constraintLayout = findViewById(R.id.constraint_layout);
         layout2.clone(this,R.layout.profile_expanded);
         layout1.clone(constraintLayout);
@@ -140,6 +148,7 @@ public class ProfilePage extends AppCompatActivity {
                             isSuccess=true;
                           Csv= rs.getString("Csc");
                             z = "Login successful"+Csv;
+                            //Address.setText(Csv+"");
 
                         }
                         else

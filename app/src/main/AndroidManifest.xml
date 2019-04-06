@@ -18,6 +18,14 @@
 
         <activity android:name=".ProfilePage">
         </activity>
+        <activity android:name=".ForGrid"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
         <activity android:name=".BillPage" />
         <activity

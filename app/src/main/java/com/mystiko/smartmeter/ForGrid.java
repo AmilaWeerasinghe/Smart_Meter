@@ -18,7 +18,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
-public class BillPage extends AppCompatActivity {
+public class ForGrid extends AppCompatActivity {
     String MSerialStr;
     GridView gridview;
     ArrayList<String> arrayList;
@@ -38,7 +38,7 @@ public class BillPage extends AppCompatActivity {
         db = "DB_A46FD9_Database";
         gridview = (GridView) findViewById(R.id.gridview);
         connect = CONN(un, passwords, db, ip);
-        String query = "select * from MonthlyConsumptionValidateTable where MSerial= '"+MSerialStr+"'";
+        String query = "select * from Meter where MeterSerial= '"+MSerialStr+"'";
         try {
             connect = CONN(un, passwords, db, ip);
             Statement statement = connect.createStatement();
@@ -47,15 +47,15 @@ public class BillPage extends AppCompatActivity {
             data = new ArrayList<Map<String, String>>();
             while (rs.next()) {
                 Map<String, String> datanum = new HashMap<String, String>();
-                datanum.put("A", rs.getString("MSerial"));
-                datanum.put("B", rs.getString("Month"));
-                datanum.put("C",rs.getString("kWh"));
-                datanum.put("D",rs.getString("Timestamp"));
+                datanum.put("A", rs.getString("UserDefinedAddress"));
+                datanum.put("B", rs.getString("Csc"));
+                datanum.put("C",rs.getString("RelayStatus"));
+                datanum.put("D",rs.getString("RelayStatusDate"));
                 data.add(datanum);
             }
             String[] from = { "A", "B","C","D" };
-            int[] views = { R.id.Mserial, R.id.month,R.id.Kwh ,R.id.TimeStamp};
-            final SimpleAdapter ADA = new SimpleAdapter(BillPage.this, data, R.layout.templeteforbill, from, views);
+            int[] views = { R.id.txtcountry, R.id.txtcontinent,R.id.Relay ,R.id.RalyDate};
+            final SimpleAdapter ADA = new SimpleAdapter(ForGrid.this, data, R.layout.templateforgrid, from, views);
             gridview.setAdapter(ADA);
         } catch (SQLException e) {
             e.printStackTrace();
