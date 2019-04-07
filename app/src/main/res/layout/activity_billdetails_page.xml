@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#00000000">
+    android:background="@drawable/bg3">
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -17,16 +17,16 @@
             android:textStyle="bold"
             android:layout_margin="5dp"/>
 
-    <TextView android:id="@+id/Mserial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5px"
-        android:text="MSerial"
-        android:textStyle="bold"
-        android:textColor="#dddc3c"
-        android:textSize="16sp"
-        android:layout_margin="5dp"
-        android:paddingLeft="5dp"/>
+        <TextView android:id="@+id/Mserial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:text="MSerial"
+            android:textStyle="bold"
+            android:textColor="#dddc3c"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_height="wrap_content"
@@ -39,16 +39,16 @@
             android:text="Month"
             android:textStyle="bold"
             android:layout_margin="5dp"/>
-    <TextView android:id="@+id/month"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Month"
-        android:textStyle="bold|italic"
-        android:textColor="#0dd0dd"
-        android:textSize="16sp" >
-    </TextView>
-        </LinearLayout>
+        <TextView android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Month"
+            android:textStyle="bold|italic"
+            android:textColor="#0dd0dd"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -61,15 +61,15 @@
             android:text="KwH"
             android:textStyle="bold"
             android:layout_margin="5dp"/>
-    <TextView android:id="@+id/Kwh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Kwh"
-        android:textStyle="bold|italic"
-        android:textColor="@color/global_color_primary_light"
-        android:textSize="16sp" >
-    </TextView>
+        <TextView android:id="@+id/Kwh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kwh"
+            android:textStyle="bold|italic"
+            android:textColor="@color/global_color_primary_light"
+            android:textSize="16sp" >
+        </TextView>
     </LinearLayout>
     <LinearLayout
         android:layout_height="wrap_content"
@@ -105,15 +105,15 @@
             android:text="Time Stamp"
             android:textStyle="bold"
             android:layout_margin="5dp"/>
-    <TextView android:id="@+id/TimeStamp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="TimeStamp"
-        android:textStyle="bold|italic"
-        android:textColor="@color/global_color_primary_light"
-        android:textSize="16sp" >
-    </TextView>
+        <TextView android:id="@+id/TimeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="TimeStamp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/global_color_primary_light"
+            android:textSize="16sp" >
+        </TextView>
     </LinearLayout>
 
 </LinearLayout>

@@ -37,7 +37,7 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
         }
         if(view==Profile){
             finish();
-            Intent k = new Intent(this, ForGrid.class);
+            Intent k = new Intent(this, BilldetailsPage.class);
             k.putExtra("mserial", MSerialStr);
             startActivity(k);
         }

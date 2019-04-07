@@ -1,46 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
     android:orientation="vertical"
-    android:padding="5dp" >
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSerial Number"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
 
     <TextView android:id="@+id/txtcountry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5px"
+        android:layout_marginTop="5dp"
         android:text="COUNTRY"
         android:textStyle="bold"
         android:textColor="#ff3c3c"
         android:textSize="16sp" >
     </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSerial Number"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
     <TextView android:id="@+id/txtcontinent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5px"
+        android:layout_marginTop="5dp"
         android:text="CONTINENT"
         android:textStyle="bold|italic"
         android:textColor="#0080ff"
         android:textSize="16sp" >
     </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relay Status"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
     <TextView android:id="@+id/Relay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5px"
+        android:layout_marginTop="5dp"
         android:text="Relay"
         android:textStyle="bold|italic"
         android:textColor="@color/global_color_primary_light"
         android:textSize="16sp" >
     </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relay Status Date"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
     <TextView android:id="@+id/RalyDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5px"
+        android:layout_marginTop="5dp"
         android:text="RelayDate"
         android:textStyle="bold|italic"
         android:textColor="@color/global_color_primary_light"
         android:textSize="16sp" >
     </TextView>
+    </LinearLayout>>
 
 </LinearLayout>
