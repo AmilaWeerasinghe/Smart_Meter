@@ -53,6 +53,7 @@ public class BillPage extends AppCompatActivity {
                 datanum.put("D",rs.getString("Timestamp"));
                 data.add(datanum);
             }
+            //String units=data.get(2).toString();
             String[] from = { "A", "B","C","D" };
             int[] views = { R.id.Mserial, R.id.month,R.id.Kwh ,R.id.TimeStamp};
             final SimpleAdapter ADA = new SimpleAdapter(BillPage.this, data, R.layout.templeteforbill, from, views);

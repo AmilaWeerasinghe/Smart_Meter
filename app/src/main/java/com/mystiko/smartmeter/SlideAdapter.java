@@ -23,17 +23,17 @@ public class SlideAdapter extends PagerAdapter {
     };
     // list of titles
     public String[] lst_title = {
-            "COSMONAUT",
-            "SATELITE",
-            "GALAXY",
-            "ROCKET"
+            "CEB",
+            "SHOP",
+            "SAFETY",
+            "Maps"
     }   ;
     // list of descriptions
     public String[] lst_description = {
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+            "Ceylon Electricity Board,",
+            "Smart meter Automation,",
+            "Customer Gui,",
+            "Most used"
     };
     // list of background colors
     public int[]  lst_backgroundcolor = {

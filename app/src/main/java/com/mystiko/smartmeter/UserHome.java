@@ -24,12 +24,6 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
         Profile.setOnClickListener(this);
         Update.setOnClickListener(this);
 
-
-
-
-
-
-
     }
 
     @Override

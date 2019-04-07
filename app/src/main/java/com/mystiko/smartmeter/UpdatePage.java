@@ -8,6 +8,7 @@ import android.os.Bundle;
 public class UpdatePage extends AppCompatActivity {
     private ViewPager viewPager;
     private SlideAdapter myadapter;
+    String MSerialStr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
