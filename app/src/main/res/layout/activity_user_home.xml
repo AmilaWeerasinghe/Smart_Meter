@@ -30,7 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@drawable/thunderred">
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -64,12 +65,14 @@
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
-            android:id="@+id/ProfileCard">
+            android:id="@+id/ProfileCard"
+           >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@drawable/greent">
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -115,7 +118,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@drawable/gt2">
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -127,25 +131,27 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Add"/>
+                    android:text="Connection"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightgray1"
                     android:layout_margin="10dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
                     android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:text="Set up your Connectivity"
+                    android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
+            android:id="@+id/UpdateCard"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp">
@@ -154,7 +160,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/redt">
 
                 <ImageView
                     android:layout_width="64dp"
@@ -167,7 +174,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Links"
+                    android:text="Updates"
                     android:textStyle="bold" />
 
                 <View
@@ -181,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Check your bank activities"
+                    android:text="Updates"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -205,7 +212,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@drawable/tt2">
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -217,7 +225,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Add"/>
+                    android:text="Directions"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -227,7 +235,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Contact Us"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 

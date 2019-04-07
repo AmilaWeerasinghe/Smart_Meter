@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class UserHome extends AppCompatActivity implements View.OnClickListener {
-    CardView Bill,Profile;
+    CardView Bill,Profile,Update;
     String MSerialStr;
 
     @Override
@@ -19,8 +19,10 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
         MSerialStr = intent.getExtras().getString("mserial");
         Bill=(CardView)findViewById(R.id.BillCard);
         Profile=(CardView)findViewById(R.id.ProfileCard);
+        Update=(CardView)findViewById(R.id.UpdateCard);
         Bill.setOnClickListener(this);
         Profile.setOnClickListener(this);
+        Update.setOnClickListener(this);
 
 
 
@@ -44,6 +46,12 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
             Intent k = new Intent(this, ForGrid.class);
             k.putExtra("mserial", MSerialStr);
             startActivity(k);
+        }
+        if(view==Update){
+            finish();
+            Intent l = new Intent(this, UpdatePage.class);
+            l.putExtra("mserial", MSerialStr);
+            startActivity(l);
         }
 
 

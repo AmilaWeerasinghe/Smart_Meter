@@ -15,18 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
-        <activity android:name=".ProfilePage">
-        </activity>
-        <activity android:name=".ForGrid"  >
+        <activity android:name=".UpdatePage"></activity>
+        <activity android:name=".ProfilePage"></activity>
+        <activity android:name=".ForGrid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".BillPage" />
         <activity
             android:name=".SplashActivity"
