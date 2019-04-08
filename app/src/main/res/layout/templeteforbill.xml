@@ -115,5 +115,10 @@
         android:textSize="16sp" >
     </TextView>
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="back"/>
 
 </LinearLayout>

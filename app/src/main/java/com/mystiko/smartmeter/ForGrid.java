@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 public class ForGrid extends AppCompatActivity {
@@ -81,5 +82,13 @@ public class ForGrid extends AppCompatActivity {
             Log.e("ERRO", e.getMessage());
         }
         return conn;
+    }
+
+    public void backuser(View view) {
+        finish();
+        Intent n = new Intent(this, UserHome.class);
+        n.putExtra("mserial", MSerialStr);
+        startActivity(n);
+
     }
 }

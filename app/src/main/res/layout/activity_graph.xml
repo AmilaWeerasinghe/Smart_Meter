@@ -4,19 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.mystiko.smartmeter.UpdatePage">
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+    tools:context=".Graph"
+    android:orientation="vertical">
+    <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
-        android:layout_height="420dp">
-
-    </android.support.v4.view.ViewPager>
+        android:layout_height="200dip"
+        android:id="@+id/graph" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:onClick="back1"/>
+        android:onClick="backto"
+        android:id="@+id/GraphBack"/>
 
 </LinearLayout>

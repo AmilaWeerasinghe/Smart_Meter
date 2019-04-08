@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".BilldetailsPage"></activity>
+        <activity android:name=".Graph"></activity>
+        <activity android:name=".BilldetailsPage" />
         <activity android:name=".UpdatePage" />
         <activity android:name=".ProfilePage" />
         <activity android:name=".ForGrid">
