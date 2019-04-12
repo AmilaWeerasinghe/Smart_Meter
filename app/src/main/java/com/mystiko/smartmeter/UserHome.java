@@ -53,14 +53,14 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
         }
         if(view==Graph){
             finish();
-            Intent o = new Intent(this, Graph.class);
+            Intent o = new Intent(this, Message.class);
            // o.putExtra("mserial", MSerialStr);
             startActivity(o);
         }
         if(view==Contact){
             finish();
-            Intent r = new Intent(this, ContactPage.class);
-            startActivity(r);
+            Intent q = new Intent(this, ProfileFragment.class);
+            startActivity(q);
         }
 
 

@@ -51,6 +51,9 @@ public class ContactPage extends AppCompatActivity implements NavigationView.OnN
                         new ChatFragment()).commit();
                 break;
             case R.id.nav_profile:
+               /* finish();
+                Intent r = new Intent(this, MapsActivity.class);
+                startActivity(r);*/
 
 
                 break;
