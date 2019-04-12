@@ -54,7 +54,7 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
         if(view==Graph){
             finish();
             Intent o = new Intent(this, Graph.class);
-            o.putExtra("mserial", MSerialStr);
+           // o.putExtra("mserial", MSerialStr);
             startActivity(o);
         }
         if(view==Contact){
