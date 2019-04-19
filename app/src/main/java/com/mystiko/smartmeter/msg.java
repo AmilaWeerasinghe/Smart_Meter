@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -33,12 +34,14 @@ import com.google.android.gms.maps.model.MarkerOptions;
  */
 public class msg extends Fragment implements  View.OnClickListener{
     Button button1;
+    EditText textBox;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_msg,
                 container, false);
+        textBox=(EditText)view.findViewById(R.id.msgBox);
         Button buttonsms = (Button) view.findViewById(R.id.officer1Text);
         buttonsms.setOnClickListener(new Button.OnClickListener(){
 
@@ -46,8 +49,8 @@ public class msg extends Fragment implements  View.OnClickListener{
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
 
-                String smsNumber ="123456"; //edittextSmsNumber.getText().toString();
-                String smsText ="testing" ;//edittextSmsText.getText().toString();
+                String smsNumber ="0775558888"; //edittextSmsNumber.getText().toString();
+                String smsText = textBox.getText().toString();;//edittextSmsText.getText().toString();
 
                 Uri uri = Uri.parse("smsto:" + smsNumber);
                 Intent intent = new Intent(Intent.ACTION_SENDTO, uri);

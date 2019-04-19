@@ -46,7 +46,43 @@ public class Call extends Fragment implements  View.OnClickListener{
             {
                 // do something
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:123456789"));
+                callIntent.setData(Uri.parse("tel:0662212212"));
+                startActivity(callIntent);
+            }
+        });
+        Button button2 = (Button) view.findViewById(R.id.officer2);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // do something
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:0812233444"));
+                startActivity(callIntent);
+            }
+        });
+        Button button3 = (Button) view.findViewById(R.id.officer3);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // do something
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:0662221220"));
+                startActivity(callIntent);
+            }
+        });
+        Button button4 = (Button) view.findViewById(R.id.officer4);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // do something
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:0112222333"));
                 startActivity(callIntent);
             }
         });

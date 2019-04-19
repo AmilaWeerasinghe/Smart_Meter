@@ -2,6 +2,7 @@ package com.mystiko.smartmeter;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -97,7 +98,7 @@ public class navigation extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_frame, new GmapFragment()).commit();
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_back) {
 
         }
 
