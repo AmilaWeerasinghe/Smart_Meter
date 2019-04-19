@@ -86,7 +86,7 @@ public class navigation extends AppCompatActivity
         if (id == R.id.nav_first_layout) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame
-                            , new FirstFragment())
+                            , new msg())
                     .commit();
         } else if (id == R.id.nav_second_layout) {
             fragmentManager.beginTransaction()

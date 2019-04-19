@@ -7,11 +7,11 @@
         <item
             android:id="@+id/nav_first_layout"
             android:icon="@drawable/ic_menu_camera"
-            android:title="First Layout" />
+            android:title="Message Us" />
         <item
             android:id="@+id/nav_second_layout"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Call " />
+            android:title="Call Us" />
         <item
             android:id="@+id/nav_third_layout"
             android:icon="@drawable/ic_menu_slideshow"
