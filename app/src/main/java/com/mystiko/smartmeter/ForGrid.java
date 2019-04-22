@@ -30,14 +30,14 @@ public class ForGrid extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gridviews);
+        setContentView(R.layout.gridy);
         Intent intent = getIntent();
         MSerialStr = intent.getExtras().getString("mserial");
         ip = "205.144.171.68";
         un = "DB_A46FD9_Database_admin";
         passwords = "0662231015asd";
         db = "DB_A46FD9_Database";
-        gridview = (GridView) findViewById(R.id.gridview);
+        gridview = (GridView) findViewById(R.id.gridy);
         connect = CONN(un, passwords, db, ip);
         String query = "select * from Meter where MeterSerial= '"+MSerialStr+"'";
         try {

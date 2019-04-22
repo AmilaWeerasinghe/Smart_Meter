@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="5dp">
+
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         android:layout_margin="5dp"
         android:text="COUNTRY"
         android:textStyle="bold"
-        android:textColor="#dddd"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="16sp" >
     </TextView>
 
@@ -34,7 +35,7 @@
         android:layout_marginTop="5dp"
         android:text="CONTINENT"
         android:textStyle="bold|italic"
-        android:textColor="#dddd"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="16sp" >
     </TextView>
     </LinearLayout>
@@ -56,7 +57,7 @@
         android:layout_marginTop="5dp"
         android:text="Relay"
         android:textStyle="bold|italic"
-        android:textColor="@color/global_color_primary_light"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="16sp" >
     </TextView>
     </LinearLayout>
@@ -78,7 +79,7 @@
         android:layout_marginTop="5dp"
         android:text="RelayDate"
         android:textStyle="bold|italic"
-        android:textColor="@color/global_color_primary_light"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="16sp" >
     </TextView>
     </LinearLayout>

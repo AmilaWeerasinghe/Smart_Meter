@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:numColumns="1"
-        android:background="@drawable/bg3"
+        android:background="@drawable/backgroundceb"
         android:stretchMode="columnWidth" >
     </GridView>
 </LinearLayout>
