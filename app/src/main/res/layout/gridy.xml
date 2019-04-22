@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:numColumns="1"
-        android:background="@drawable/backgroundceb"
+        android:background="@color/white"
         android:stretchMode="columnWidth" >
     </GridView>
     <CalendarView
