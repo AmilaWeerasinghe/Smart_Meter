@@ -16,22 +16,29 @@ public class SlideAdapter extends PagerAdapter {
 
     // list of images
     public int[] lst_images = {
-            R.drawable.image_1,
+            R.drawable.safety,
             R.drawable.image_2,
             R.drawable.image_3,
             R.drawable.image_4
     };
     // list of titles
     public String[] lst_title = {
-            "CEB",
-            "SHOP",
+            "Safety First",
+            "OUTDOOR ELECTRICAL SAFETY",
             "SAFETY",
             "Maps"
     }   ;
     // list of descriptions
     public String[] lst_description = {
-            "Ceylon Electricity Board,",
-            "Smart meter Automation,",
+            "INDOOR ELECTRICAL SAFETY\n" +
+                    "Electric appliances should not be used when in contact with water.\n" +
+                    "\n" +
+                    "All the electrical appliances which are not in use should be unplugged.\n" +
+                    "\n" +
+                    "An electrical appliance should not be touched with a metal object.\n" +
+                    "\n" +
+                    "It should be made sure that your hands are dry when using an appliance.,",
+                    "Some overhead power lines appear insulated but only have weather protection. These are not safe to be touched. Touching a power line with any part of your body or any object such as ladders, tree trimmers, poles, ropes or kites can result in serious injury or death",
             "Customer Gui,",
             "Most used"
     };
