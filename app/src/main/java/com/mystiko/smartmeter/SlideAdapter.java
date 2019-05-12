@@ -17,20 +17,19 @@ public class SlideAdapter extends PagerAdapter {
     // list of images
     public int[] lst_images = {
             R.drawable.safety,
-            R.drawable.image_2,
-            R.drawable.image_3,
-            R.drawable.image_4
+            R.drawable.outsafe,
+            R.drawable.save,
+            R.drawable.renew
     };
     // list of titles
     public String[] lst_title = {
-            "Safety First",
+            "INDOOR ELECTRICAL SAFETY",
             "OUTDOOR ELECTRICAL SAFETY",
-            "SAFETY",
-            "Maps"
+            "LET’S SAVE ELECTRICITY!",
+            "INTRODUCTION TO RENEWABLE ENERGY"
     }   ;
     // list of descriptions
     public String[] lst_description = {
-            "INDOOR ELECTRICAL SAFETY\n" +
                     "Electric appliances should not be used when in contact with water.\n" +
                     "\n" +
                     "All the electrical appliances which are not in use should be unplugged.\n" +
@@ -39,8 +38,17 @@ public class SlideAdapter extends PagerAdapter {
                     "\n" +
                     "It should be made sure that your hands are dry when using an appliance.,",
                     "Some overhead power lines appear insulated but only have weather protection. These are not safe to be touched. Touching a power line with any part of your body or any object such as ladders, tree trimmers, poles, ropes or kites can result in serious injury or death",
-            "Customer Gui,",
-            "Most used"
+            "CFL is a wonderful idea!\n" +
+                    "Clean the bulbs!\n" +
+                    "Manage brightness!\n" +
+                    "Optimum use of natural light! \n" +
+                    "Halogen lamps & motion detectors!\n " +
+                    "Right load, water, temperature & detergent on the washing machine!\n" +
+                    "Cook with lids on your pans!\n" +
+                    "Right care for the refrigerator!\n" +
+                    "Iron all clothes at once!",
+            "Renewable energy is energy which comes from natural resources such as sunlight, wind, rain, biomass tides, and geothermal heat, which are renewable (naturally replenished).\n" +
+                    "About 16% of global final energy consumption comes from renewables, with 10% coming from traditional biomass, which is mainly used for heating, and 3.4% from hydroelectricity"
     };
     // list of background colors
     public int[]  lst_backgroundcolor = {
