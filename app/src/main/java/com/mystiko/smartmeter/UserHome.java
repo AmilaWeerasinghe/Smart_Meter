@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class UserHome extends AppCompatActivity implements View.OnClickListener {
-    CardView Bill,Profile,Update,Graph,Contact;
+    CardView Bill,Profile,Update,Graph,Contact,Map;
     String MSerialStr;
 
     @Override
@@ -23,6 +23,7 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
         Update=(CardView)findViewById(R.id.UpdateCard);
         Graph=(CardView)findViewById(R.id.graph);
         Contact=(CardView)findViewById(R.id.ContactPage);
+        Map=(CardView)findViewById(R.id.mappage);
         Bill.setOnClickListener(this);
         Profile.setOnClickListener(this);
         Update.setOnClickListener(this);
@@ -62,6 +63,11 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
             finish();
             Intent q = new Intent(this, navigation.class);
             startActivity(q);
+        }
+        if(view==Map){
+            finish();
+            Intent g = new Intent(this, MapsActivity.class);
+            startActivity(g);
         }
 
 
