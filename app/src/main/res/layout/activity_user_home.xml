@@ -281,7 +281,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Set up your Connectivity"
+                    android:text="Fing us on Google maps"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>

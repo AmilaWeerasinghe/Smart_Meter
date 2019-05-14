@@ -99,6 +99,9 @@ public class navigation extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_back) {
+            finish();
+            Intent y = new Intent(this, UserHome.class);
+            startActivity(y);
 
         }
 

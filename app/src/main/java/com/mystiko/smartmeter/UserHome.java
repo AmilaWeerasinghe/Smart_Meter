@@ -29,6 +29,7 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
         Update.setOnClickListener(this);
         Graph.setOnClickListener(this);
         Contact.setOnClickListener(this);
+        Map.setOnClickListener(this);
 
     }
 
