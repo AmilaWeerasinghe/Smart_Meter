@@ -91,7 +91,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="Use QR Code"
         android:shadowColor="@android:color/transparent"
         android:padding="15dp"
         android:layout_marginRight="10dp"
@@ -99,7 +99,9 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="0dp"
         android:background="@drawable/shapesignup"
-        android:textColor="@color/global_color_green_primary_dark"/>
+        android:textColor="@color/global_color_green_primary_dark"
+        android:id="@+id/QRButton"
+        android:onClick="GotoQR"/>
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -23,7 +23,7 @@ import java.sql.Statement;
 public class MainActivity extends AppCompatActivity
 {
     // Declaring layout button, edit texts
-    Button login;
+    Button login,QR;
     EditText username,password;
     ProgressBar progressBar;
     // End Declaring layout button, edit texts
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity
 
         // Getting values from button, texts and progress bar
         login = (Button) findViewById(R.id.LoginButton);
+        QR=(Button)findViewById(R.id.QRButton);
         username = (EditText) findViewById(R.id.userName);
         password = (EditText) findViewById(R.id.Password);
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
@@ -173,5 +174,11 @@ public class MainActivity extends AppCompatActivity
             Log.e("error here 3 : ", e.getMessage());
         }
         return connection;
+    }
+
+    public void GotoQR(View view){
+        Intent intent = new Intent(MainActivity.this, MyQR.class);
+        startActivity(intent);
+
     }
 }
