@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void GotoQR(View view){
-        Intent intent = new Intent(MainActivity.this, MyQR.class);
+        Intent intent = new Intent(MainActivity.this, QRead.class);
         startActivity(intent);
 
     }

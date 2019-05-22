@@ -25,7 +25,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ScanActivity"></activity>
+        <activity android:name=".QRead"></activity>
+        <activity android:name=".ScanActivity" />
         <activity android:name=".MyQR" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
