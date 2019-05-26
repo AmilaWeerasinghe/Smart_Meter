@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity
         // End Getting values from button, texts and progress bar
 
         // Declaring Server ip, username, database name and password
-        ip = "205.144.171.68";
-        db = "DB_A46FD9_Database";
-        un = "DB_A46FD9_Database_admin";
+        ip = "209.132.252.15";
+        db = "DB_A492B5_smartauto677";
+        un = "DB_A492B5_smartauto677_admin";
         pass = "0662231015asd";
         // Declaring Server ip, username, database name and password
 
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity
         try
         {
             Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
-            ConnectionURL = "jdbc:jtds:sqlserver://sql5041.mywindowshosting.com;database=DB_A46FD9_Database;user=DB_A46FD9_Database_admin;password=0662231015asd";
+            ConnectionURL = "jdbc:jtds:sqlserver://sql7005.site4now.net;database=DB_A492B5_smartauto677;user=DB_A492B5_smartauto677_admin;password=0662231015asd";
 //            ConnectionURL = "jdbc:jtds:sqlserver://192.168.1.9;database=msss;instance=SQLEXPRESS;Network Protocol=NamedPipes" ;
 
 
