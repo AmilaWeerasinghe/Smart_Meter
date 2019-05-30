@@ -33,10 +33,10 @@ public class ForGrid extends AppCompatActivity {
         setContentView(R.layout.gridy);
         Intent intent = getIntent();
         MSerialStr = intent.getExtras().getString("mserial");
-        ip = "205.144.171.68";
-        un = "DB_A46FD9_Database_admin";
+        ip = "209.132.252.15";
+        un = "DB_A492B5_smartauto677_admin";
         passwords = "0662231015asd";
-        db = "DB_A46FD9_Database";
+        db = "DB_A492B5_smartauto677";
         gridview = (GridView) findViewById(R.id.gridy);
         connect = CONN(un, passwords, db, ip);
         String query = "select * from Meter where MeterSerial= '"+MSerialStr+"'";
@@ -72,7 +72,7 @@ public class ForGrid extends AppCompatActivity {
         String ConnURL = null;
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            ConnURL = "jdbc:jtds:sqlserver://sql5041.mywindowshosting.com;database=DB_A46FD9_Database;user=DB_A46FD9_Database_admin;password=0662231015asd";
+            ConnURL = "jdbc:jtds:sqlserver://sql7005.site4now.net;database=DB_A492B5_smartauto677;user=DB_A492B5_smartauto677_admin;password=0662231015asd";
             conn = DriverManager.getConnection(ConnURL);
         } catch (SQLException se) {
             Log.e("ERRO", se.getMessage());
