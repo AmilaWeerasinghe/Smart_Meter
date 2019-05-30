@@ -25,7 +25,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".QRead"></activity>
+        <activity android:name=".BarGraphActivity"></activity>
+        <activity android:name=".PieChartActivity" />
+        <activity android:name=".LineGraphActivity" />
+        <activity
+            android:name=".UsageActivity"
+            android:label="@string/title_activity_usage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".QRead" />
         <activity android:name=".ScanActivity" />
         <activity android:name=".MyQR" />
         <!--
