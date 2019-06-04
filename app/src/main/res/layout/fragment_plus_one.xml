@@ -11,4 +11,12 @@
         plus:annotation="inline"
         plus:size="standard" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/fragback"
+        android:layout_height="wrap_content"
+        android:text="Go To Back"
+        android:onClick="returntoHome"/>
+
 </FrameLayout>
