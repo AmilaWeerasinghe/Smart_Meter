@@ -11,6 +11,7 @@ public class UsageActivity extends AppCompatActivity {
     private Button BtnMove1 ;
     private Button BtnMove2 ;
     private Button BtnMove3 ;
+    private Button back;
     String MSerial;
 
     @Override
@@ -62,6 +63,13 @@ public class UsageActivity extends AppCompatActivity {
         Intent startNewActivityPie = new Intent(this, PieChartActivity.class);
         startNewActivityPie.putExtra("mserial",MSerial);
         startActivity(startNewActivityPie);
+    }
+
+    public void backfromUsage(View view) {
+        finish();
+        Intent n = new Intent(this, UserHome.class);
+        n.putExtra("mserial", MSerial);
+        startActivity(n);
     }
 
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5B7B1"
+    android:background="@drawable/backgroundceb"
     tools:context=".UsageActivity">
 
     <LinearLayout
@@ -22,15 +22,19 @@
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:textColor="@color/yello1"
             android:layout_margin="10dp"
+            android:background="@color/trans"
             android:text="Usage-line chart"
             tools:layout_editor_absoluteX="28dp"
             tools:layout_editor_absoluteY="341dp" />
 
         <Button
             android:id="@+id/button2"
+            android:textColor="@color/yello1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/trans"
             android:layout_centerInParent="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
@@ -40,12 +44,27 @@
             tools:layout_editor_absoluteY="341dp" />
 
         <Button
+            android:textColor="@color/yello1"
             android:id="@+id/button3"
             android:layout_width="211dp"
+            android:background="@color/trans"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
             android:text="Usage-pie chart"
+            tools:layout_editor_absoluteX="275dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <Button
+            android:textColor="@color/yello1"
+            android:id="@+id/backFromUsage"
+            android:layout_width="211dp"
+            android:onClick="backfromUsage"
+            android:background="@color/trans"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="Go back to Home page"
             tools:layout_editor_absoluteX="275dp"
             tools:layout_editor_absoluteY="341dp" />
 

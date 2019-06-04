@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.mystiko.smartmeter.UserHome"
     android:orientation="vertical"
-    android:padding="10dp"
+
     android:background="@drawable/bg3"
     android:gravity="center"
     android:id="@+id/ll">
@@ -22,16 +22,18 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:id="@+id/BillCard"
-            android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
             android:layout_margin="10dp"
-            android:focusable="true">
+            android:focusable="true"
+            app:cardBackgroundColor="@color/trans"
+            >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/thunderred">
+                >
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -42,6 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_marginTop="10dp"
                     android:text="Your bill"/>
                 <View
@@ -63,7 +66,8 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="170dp"
+            app:cardBackgroundColor="@color/trans"
             android:layout_margin="10dp"
             android:id="@+id/ProfileCard"
            >
@@ -72,7 +76,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/greent">
+                >
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -113,15 +117,16 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="170dp"
             android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/trans"
             android:id="@+id/graph">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/gt2">
+                >
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -132,6 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_marginTop="10dp"
                     android:text="Usage"/>
                 <View
@@ -154,8 +160,9 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:id="@+id/UpdateCard"
+            app:cardBackgroundColor="@color/trans"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="170dp"
             android:layout_margin="10dp">
 
             <LinearLayout
@@ -163,7 +170,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:background="@drawable/redt">
+                >
 
                 <ImageView
                     android:layout_width="64dp"
@@ -176,6 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
                     android:text="Updates"
                     android:textStyle="bold" />
 
@@ -190,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Updates"
+                    android:text="Stay up to date with new trends"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -207,8 +215,9 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="170dp"
             android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/trans"
             android:id="@+id/ContactPage">
             <LinearLayout
 
@@ -216,7 +225,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/tt2">
+                >
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -227,6 +236,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_marginTop="10dp"
                     android:text="Contact us"/>
                 <View
@@ -238,7 +248,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Contact Us"
+
+                    android:text="Contact Ceb"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -248,15 +259,16 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="170dp"
             android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/trans"
             android:id="@+id/mappage">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/gt2">
+                >
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -281,7 +293,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Fing us on Google maps"
+                    android:text="Find us on Google maps"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
