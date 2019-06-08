@@ -1,6 +1,7 @@
 package com.mystiko.smartmeter;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -58,12 +59,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(7.2906, 80.6337);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Kandy"));
+        LatLng sydney = new LatLng(7.2538, 80.5916);
+        mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ) );
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Peradeniya"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
         mMap.setMyLocationEnabled(true);
+
+    }
+
+    public void returnHome(View view) {
+        finish();
+        Intent r = new Intent(this, UserHome.class);
+        startActivity(r);
     }
 }

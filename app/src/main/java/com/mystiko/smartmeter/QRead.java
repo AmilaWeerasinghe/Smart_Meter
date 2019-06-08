@@ -63,7 +63,14 @@ public class QRead extends AppCompatActivity implements View.OnClickListener {
                     //that means the encoded format not matches
                     //in this case you can display whatever data is available on the qrcode
                     //to a toast
+
+                        finish();
+                        Intent g = new Intent(this, UserHome.class);
+                        g.putExtra("mserial", "215");
+                        startActivity(g);
+
                     Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
+
                 }
             }
         } else {
@@ -75,4 +82,6 @@ public class QRead extends AppCompatActivity implements View.OnClickListener {
         //initiating the qr code scan
         qrScan.initiateScan();
     }
+
+
 }
