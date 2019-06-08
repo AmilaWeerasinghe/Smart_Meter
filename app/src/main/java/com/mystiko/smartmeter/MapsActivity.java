@@ -72,9 +72,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    public void returnHome(View view) {
+    public void return2Home(View view) {
         finish();
-        Intent r = new Intent(this, UserHome.class);
-        startActivity(r);
+        Intent j = new Intent(this, UserHome.class);
+        startActivity(j);
     }
 }

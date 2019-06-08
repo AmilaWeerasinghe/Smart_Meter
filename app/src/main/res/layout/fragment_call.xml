@@ -11,10 +11,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/backgroundceb">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your District"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/country_arrays"
+            android:prompt="@string/country_prompt" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Call officer"
+        android:text="Call A officer"
         android:id="@+id/officer1"/>
     <Button
         android:layout_width="match_parent"
