@@ -99,7 +99,7 @@ public class navigation extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_back) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new returnFragment()).commit();
+           
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
