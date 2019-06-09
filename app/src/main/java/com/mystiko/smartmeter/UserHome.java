@@ -61,12 +61,10 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
             startActivity(o);
         }
         if(view==Contact){
-            finish();
             Intent q = new Intent(this, navigation.class);
             startActivity(q);
         }
         if(view==Map){
-            finish();
             Intent g = new Intent(this, MapsActivity.class);
             startActivity(g);
         }

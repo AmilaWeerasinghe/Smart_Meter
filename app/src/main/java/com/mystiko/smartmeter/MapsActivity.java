@@ -1,6 +1,7 @@
 package com.mystiko.smartmeter;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -24,6 +25,8 @@ import java.util.List;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,9 +75,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    public void return2Home(View view) {
-        finish();
-        Intent j = new Intent(this, UserHome.class);
-        startActivity(j);
+    public void returnHome(View view) {
+        super.onBackPressed();
     }
 }

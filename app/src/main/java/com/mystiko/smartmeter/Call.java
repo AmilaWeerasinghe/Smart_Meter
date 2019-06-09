@@ -31,7 +31,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
  * create an instance of this fragment.
  */
 public class Call extends Fragment implements  View.OnClickListener{
-    Button button1;
+    Button button1,button2,button3,button4;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class Call extends Fragment implements  View.OnClickListener{
             }
         });
         Button button2 = (Button) view.findViewById(R.id.officer2);
-        button.setOnClickListener(new View.OnClickListener()
+        button2.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -63,7 +63,7 @@ public class Call extends Fragment implements  View.OnClickListener{
             }
         });
         Button button3 = (Button) view.findViewById(R.id.officer3);
-        button.setOnClickListener(new View.OnClickListener()
+        button3.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -75,7 +75,7 @@ public class Call extends Fragment implements  View.OnClickListener{
             }
         });
         Button button4 = (Button) view.findViewById(R.id.officer4);
-        button.setOnClickListener(new View.OnClickListener()
+        button4.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
