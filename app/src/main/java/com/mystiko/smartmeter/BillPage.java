@@ -132,13 +132,14 @@ public class BillPage extends AppCompatActivity {
         }
         return connection;
     }
-    public void back(View view) {
+    public void backing(View view) {
         finish();
         Intent m = new Intent(this, UserHome.class);
         m.putExtra("mserial", MSerialNum);
         startActivity(m);
 
     }
+
 
 
 }
