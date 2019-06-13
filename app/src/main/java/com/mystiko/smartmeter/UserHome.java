@@ -37,7 +37,7 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
         if(view==Bill){
             finish();
-            Intent j = new Intent(this, UsageActivity.class);
+            Intent j = new Intent(this, BillPage.class);
             j.putExtra("mserial",MSerialStr);
             startActivity(j);
 

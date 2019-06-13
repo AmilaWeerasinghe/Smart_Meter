@@ -17,9 +17,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class BillPage extends AppCompatActivity {
-
-    private TextView bill,consumption;
+public class Bill extends AppCompatActivity {
 
     Connection con;
     String un,pass,db,ip;
@@ -29,10 +27,10 @@ public class BillPage extends AppCompatActivity {
     public static ArrayList<String> units=new ArrayList<String>();
     public static ArrayList<String> price=new ArrayList<String>();
     //public static ArrayList<String> time=new ArrayList<String>();
-     //TextView bill = (TextView)findViewById(R.id.priceView);
-     //TextView consumption=(TextView)findViewById(R.id.unitView);
+    private  TextView bill = (TextView) findViewById(R.id.priceView);
+    private TextView consumption=(TextView) findViewById(R.id.unitView);
     //private LinearLayout list=(LinearLayout)findViewById(R.id.usageHistory);
-    //TextView history=(TextView)findViewById(R.id.scrollList);
+    TextView history=(TextView)findViewById(R.id.scrollList);
 
 
     // private EditText showPrice;
@@ -40,22 +38,16 @@ public class BillPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bill_page);
+        setContentView(R.layout.activity_bill);
 
         Intent intent = getIntent();
         MSerialNum = intent.getExtras().getString("mserial");
 
-
-        TextView bill = (TextView)findViewById(R.id.priceView);
-        TextView consumption=(TextView)findViewById(R.id.unitView);
-        //private LinearLayout list=(LinearLayout)findViewById(R.id.usageHistory);
-        TextView history=(TextView)findViewById(R.id.scrollList);
-
         history.setMovementMethod(new ScrollingMovementMethod());
         // price.setText("100");
-        ip = "209.132.252.15";
-        db = "DB_A492B5_smartauto677";
-        un = "DB_A492B5_smartauto677_admin";
+        ip = "205.144.171.68";
+        db = "DB_A46FD9_Database";
+        un = "DB_A46FD9_Database_admin";
         pass = "0662231015asd";
 
         try
@@ -112,7 +104,7 @@ public class BillPage extends AppCompatActivity {
         try
         {
             Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
-            ConnectionURL = "jdbc:jtds:sqlserver://sql7005.site4now.net;database=DB_A492B5_smartauto677;user=DB_A492B5_smartauto677_admin;password=0662231015asd";
+            ConnectionURL = "jdbc:jtds:sqlserver://sql5041.mywindowshosting.com;database=DB_A46FD9_Database;user=DB_A46FD9_Database_admin;password=0662231015asd";
 //            ConnectionURL = "jdbc:jtds:sqlserver://192.168.1.9;database=msss;instance=SQLEXPRESS;Network Protocol=NamedPipes" ;
 
 
