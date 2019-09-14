@@ -57,7 +57,8 @@ public class ProfilePage extends AppCompatActivity {
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        layout1 = new ConstraintSet();
+        layout1
+                = new ConstraintSet();
         layout2 = new ConstraintSet();
         imageViewPhoto = findViewById(R.id.photo);
         //Address1=(TextView)findViewById(R.id.Address1);

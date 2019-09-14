@@ -100,7 +100,6 @@ public class navigation extends AppCompatActivity
 
         } else if (id == R.id.nav_back) {
 
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

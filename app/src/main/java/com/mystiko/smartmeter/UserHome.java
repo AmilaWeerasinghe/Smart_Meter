@@ -37,7 +37,7 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
         if(view==Bill){
             finish();
-            Intent j = new Intent(this, UsageActivity.class);
+            Intent j = new Intent(this, BillPage.class);
             j.putExtra("mserial",MSerialStr);
             startActivity(j);
 
@@ -61,12 +61,10 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener 
             startActivity(o);
         }
         if(view==Contact){
-            finish();
             Intent q = new Intent(this, navigation.class);
             startActivity(q);
         }
         if(view==Map){
-            finish();
             Intent g = new Intent(this, MapsActivity.class);
             startActivity(g);
         }

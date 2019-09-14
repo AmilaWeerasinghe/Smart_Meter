@@ -25,7 +25,7 @@
             android:textColor="@color/yello1"
             android:layout_margin="10dp"
             android:background="@color/trans"
-            android:text="Usage-line chart"
+            android:text="Daily Usage chart"
             tools:layout_editor_absoluteX="28dp"
             tools:layout_editor_absoluteY="341dp" />
 
@@ -39,7 +39,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
-            android:text="Usage-bar chart"
+            android:text="Monthly Usage chart"
             tools:layout_editor_absoluteX="150dp"
             tools:layout_editor_absoluteY="341dp" />
 
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
-            android:text="Usage-pie chart"
+            android:text="Usage Comparision chart"
             tools:layout_editor_absoluteX="275dp"
             tools:layout_editor_absoluteY="341dp" />
 
