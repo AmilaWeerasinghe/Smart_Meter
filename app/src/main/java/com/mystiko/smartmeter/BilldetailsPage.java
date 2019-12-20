@@ -33,10 +33,10 @@ public class BilldetailsPage extends AppCompatActivity {
         setContentView(R.layout.gridviews);
         Intent intent = getIntent();
         MSerialStr = intent.getExtras().getString("mserial");
-        ip = "205.144.171.68";
-        un = "DB_A46FD9_Database_admin";
+        ip = "205.144.171.102";
+        db = "DB_A51024_smartmeter";
+        un = "DB_A51024_smartmeter_admin";
         passwords = "0662231015asd";
-        db = "DB_A46FD9_Database";
         gridview = (GridView) findViewById(R.id.gridview);
         connect = CONN(un, passwords, db, ip);
         String query = "select * from MonthlyConsumptionValidateTable where MSerial= '"+MSerialStr+"'";
