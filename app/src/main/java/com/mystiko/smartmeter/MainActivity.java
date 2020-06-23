@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity
         // End Getting values from button, texts and progress bar
 
         // Declaring Server ip, username, database name and password
-        ip = "209.132.252.15";
-        db = "DB_A492B5_smartauto677";
-        un = "DB_A492B5_smartauto677_admin";
+        ip = "205.144.171.102";
+        db = "DB_A51024_smartmeter";
+        un = "DB_A51024_smartmeter_admin";
         pass = "0662231015asd";
         // Declaring Server ip, username, database name and password
 

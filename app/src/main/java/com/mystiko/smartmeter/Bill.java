@@ -45,9 +45,10 @@ public class Bill extends AppCompatActivity {
 
         history.setMovementMethod(new ScrollingMovementMethod());
         // price.setText("100");
-        ip = "205.144.171.68";
-        db = "DB_A46FD9_Database";
-        un = "DB_A46FD9_Database_admin";
+
+        ip = "205.144.171.102";
+        db = "DB_A51024_smartmeter";
+        un = "DB_A51024_smartmeter_admin";
         pass = "0662231015asd";
 
         try

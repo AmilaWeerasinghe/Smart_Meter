@@ -44,9 +44,9 @@ public class LineGraphActivity extends AppCompatActivity {
         Intent intent = getIntent();
         MSerialNum = intent.getExtras().getString("mserial");
 
-        ip = "209.132.252.15";
-        db = "DB_A492B5_smartauto677";
-        un = "DB_A492B5_smartauto677_admin";
+        ip = "205.144.171.102";
+        db = "DB_A51024_smartmeter";
+        un = "DB_A51024_smartmeter_admin";
         pass = "0662231015asd";
 
         try
